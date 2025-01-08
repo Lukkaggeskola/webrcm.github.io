@@ -29,7 +29,7 @@
       <label for="uploaded">Custom .bin payload:</label>
       <input type="file" id="payloadUpload">
     </p>
-    <button id="goButton">Do the thing!</button>
+    <button type="button" id="goButton">Do the thing!</button>
   </form>
 
   <div id="results">
@@ -41,6 +41,24 @@
 <footer>
   Powered by <a href="https://github.com/webrcm" target="_blank" class="w3-hover-opacity">github.com/webrcm</a>
 </footer>
+
+<script>
+  document.getElementById('goButton').addEventListener('click', function() {
+    const selectedPayload = document.querySelector('input[name="payload"]:checked').value;
+    const outputElement = document.getElementById('output');
+
+    if (selectedPayload === 'uploaded') {
+      const fileInput = document.getElementById('payloadUpload');
+      if (fileInput.files.length === 0) {
+        outputElement.value = 'No file selected!';
+      } else {
+        outputElement.value = `Selected file: ${fileInput.files[0].name}`;
+      }
+    } else {
+      outputElement.value = `Selected payload: ${selectedPayload}`;
+    }
+  });
+</script>
 
 </body>
 </html>
