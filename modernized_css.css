@@ -1,15 +1,14 @@
-/* Revamped Stylesheet for RCM Web Fusee Launcher */
+/* Updated CSS for RCM Web Fusee Launcher with Glass-like Design */
 
-/* Reset and Base Styles */
+/* Base Styles */
 body {
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
   margin: 0;
   padding: 0;
   color: #fff;
-  background: linear-gradient(135deg, #1a1a1a, #4a148c);
+  background: linear-gradient(135deg, #000000, #4a148c);
   background-size: cover;
-  backdrop-filter: blur(10px);
   line-height: 1.6;
 }
 
@@ -18,71 +17,40 @@ body {
   max-width: 800px;
   margin: 50px auto;
   padding: 20px;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.6);
   border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
   text-align: center;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(10px);
 }
 
 /* Header */
-.w3-main h1 {
+h1 {
   font-size: 2.8rem;
   color: #fff;
-  margin-bottom: 15px;
-}
-
-.w3-main h1.w3-text-blue-grey {
-  font-size: 2rem;
-  color: #b39ddb;
+  margin-bottom: 20px;
 }
 
 hr {
   border: none;
   height: 3px;
-  background: #b39ddb;
+  background: #6a1b9a;
   width: 80px;
   margin: 15px auto;
 }
 
-/* Sidebar */
-.sidebar {
-  background-color: rgba(0, 0, 0, 0.8);
-  color: white;
-}
-
-.sidebar .w3-container h3 {
-  color: #d1c4e9;
-}
-
-.sidebar .w3-bar-item {
-  padding: 14px 24px;
-  color: #c7a4ff;
-  font-weight: bold;
-  font-size: 1.2rem;
-  border-radius: 6px;
-  transition: all 0.3s;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.sidebar .w3-bar-item:hover {
-  background-color: #6a1b9a;
-  color: white;
-}
-
-/* Form and Buttons */
-.w3-radio {
-  margin-right: 10px;
-}
-
+/* Form Elements */
 label {
   font-size: 1.2rem;
   color: #e0e0e0;
 }
 
+.w3-radio {
+  margin-right: 10px;
+}
+
 #goButton {
-  background: #4a148c;
+  background: #6a1b9a;
   color: white;
   font-size: 1.4rem;
   padding: 15px 30px;
@@ -94,13 +62,13 @@ label {
 }
 
 #goButton:hover {
-  background: #6a1b9a;
+  background: #4a148c;
 }
 
 /* Output Section */
 #output {
-  background: rgba(0, 0, 0, 0.7);
-  color: #b39ddb;
+  background: rgba(0, 0, 0, 0.8);
+  color: #d1c4e9;
   font-family: monospace;
   width: 100%;
   height: 10rem;
@@ -110,33 +78,34 @@ label {
   resize: none;
 }
 
-/* Instructions Section */
-#instructions ol {
-  padding-left: 20px;
-  color: #d1c4e9;
+/* Sidebar Styles */
+.sidebar {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
 }
 
-#instructions li {
-  margin: 12px 0;
+.sidebar .w3-bar-item {
+  padding: 14px 24px;
+  color: #c7a4ff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 6px;
+  text-align: center;
+  transition: all 0.3s;
 }
 
-/* Additional Info */
-#additional ul {
-  list-style-type: disc;
-  padding-left: 20px;
-  color: #d1c4e9;
-}
-
-#additional li {
-  margin: 10px 0;
+.sidebar .w3-bar-item:hover {
+  background-color: #4a148c;
+  color: white;
 }
 
 /* Footer */
-.w3-light-grey {
-  background-color: rgba(0, 0, 0, 0.5);
-  text-align: center;
-  font-size: 0.9rem;
-  color: #b39ddb;
+footer {
+  background: rgba(0, 0, 0, 0.7);
   padding: 20px;
   border-radius: 6px;
+  text-align: center;
+  color: #d1c4e9;
+  font-size: 0.9rem;
 }
