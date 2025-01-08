@@ -70,12 +70,14 @@ label {
   background: rgba(0, 0, 0, 0.8);
   color: #d1c4e9;
   font-family: monospace;
-  width: 100%;
+  width: calc(100% - 20px);
   height: 10rem;
   border: none;
   padding: 10px;
   border-radius: 6px;
   resize: none;
+  margin: 0 auto;
+  display: block;
 }
 
 /* Sidebar Styles */
