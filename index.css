@@ -1,66 +1,129 @@
-/* Global Reset */
-* {
+/* Modernized Stylesheet for RCM Web Fusee Launcher */
+
+/* Reset and Base Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  color: #333;
+  background-color: #f9f9f9;
+  line-height: 1.6;
 }
 
-body {
-  font-family: 'Roboto', sans-serif;  /* Modern sans-serif font */
-  background-color: #f5f5f5;         /* Light gray background for contrast */
-  color: #333;                       /* Dark text for readability */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  padding: 20px;
-  transition: background-color 0.3s ease; /* Smooth background transition */
-}
-
-/* Main container */
+/* Container */
 #main {
-  width: 100%;
-  max-width: 900px;                  /* More flexible max width */
-  background-color: white;
-  border-radius: 12px;                /* Rounded corners for a modern feel */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
-  padding: 2rem;
-  overflow: hidden;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Output area */
+/* Header */
+.w3-main h1 {
+  font-size: 2.5rem;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.w3-main h1.w3-text-blue-grey {
+  font-size: 1.8rem;
+  color: #607d8b;
+}
+
+hr {
+  border: none;
+  height: 3px;
+  background: #607d8b;
+  width: 60px;
+  margin: 10px 0;
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: #2c3e50;
+  color: white;
+}
+
+.sidebar .w3-container h3 {
+  color: #ecf0f1;
+}
+
+.sidebar .w3-bar-item {
+  padding: 12px 20px;
+  color: #bdc3c7;
+  transition: all 0.3s;
+}
+
+.sidebar .w3-bar-item:hover {
+  background-color: #34495e;
+  color: white;
+}
+
+/* Form and Buttons */
+.w3-radio {
+  margin-right: 10px;
+}
+
+label {
+  font-size: 1rem;
+  color: #555;
+}
+
+#goButton {
+  background: #607d8b;
+  color: white;
+  font-size: 1.2rem;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+#goButton:hover {
+  background: #455a64;
+}
+
+/* Output Section */
 #output {
-  background-color: #222;            /* Dark background for contrast */
-  color: #00FF00;                    /* Bright green text (like terminal colors) */
-  font-family: 'Courier New', monospace; /* Monospace font for code style */
+  background: #212121;
+  color: #e0e0e0;
+  font-family: monospace;
   width: 100%;
   height: 10rem;
-  border-radius: 8px;                /* Slight rounding of corners */
-  padding: 1rem;
-  overflow-y: auto;                  /* Make the output scrollable */
-  white-space: pre-wrap;             /* Maintain spacing for code */
-  font-size: 1.1rem;                 /* Slightly larger font for readability */
-  border: 1px solid #444;            /* Subtle border to separate from other elements */
-  transition: background-color 0.3s, color 0.3s; /* Smooth color transitions */
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  resize: none;
 }
 
-/* Hover and Focus Effects */
-#main:hover {
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); /* Larger shadow on hover */
+/* Instructions Section */
+#instructions ol {
+  padding-left: 20px;
+  color: #444;
 }
 
-#output:focus {
-  outline: none;
-  background-color: #333;             /* Darker on focus */
-  color: #00FF88;                      /* Slightly lighter green when focused */
+#instructions li {
+  margin: 10px 0;
 }
 
-@media (max-width: 600px) {
-  #main {
-    padding: 1rem;                    /* Reduce padding for smaller screens */
-  }
+/* Additional Info */
+#additional ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
 
-  #output {
-    height: 8rem;                     /* Adjust height for smaller screens */
-  }
+#additional li {
+  margin: 8px 0;
+}
+
+/* Footer */
+.w3-light-grey {
+  background-color: #ecf0f1;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #7f8c8d;
 }
